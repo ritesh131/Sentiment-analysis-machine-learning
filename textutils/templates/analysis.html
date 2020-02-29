@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .pycontainer{min-height: 500px;width: 1000px;margin-left: 12.5%;text-align: center;background: lightgreen;box-shadow: 10px 10px 10px 10px #888888;}
+        .outputlist{margin-top:60px;}
+        table {
+                width: 80%;
+                margin-left: 10%;
+            }
+            table, th, td {
+              border: 1px solid black;
+              border-collapse: collapse;
+            }
+            th, td {
+              padding: 15px;
+              text-align: left;
+            }
+            table#t01 tr:nth-child(even) {
+              background-color: red;
+              color: #fff;
+            }
+            table#t01 tr:nth-child(odd) {
+             background-color: blue;
+            color: #fff;
+            }
+            table#t01 th {
+              color: #000000;
+            }
+    </style>
+</head>
+<body>
+    <div class="pycontainer">
+        <h1>Here Some Analysis of your Review.</h1>
+        <div class="outputlist">
+            <h2>Thinking Analyze in Persantile</h2>
+            <table id="t01">
+                  <tr>
+                    <th>Positive Thinking</th>
+                     <td>{{pos}}%</td>
+                  </tr>
+                  <tr>
+                    <th>Negative Thinking</th>
+                     <td>{{neg}}%</td>
+                  </tr>
+                  <tr>
+                   <th>Neutral Thinking</th>
+                     <td>{{neu}}%</td>
+                  </tr>
+                  <tr>
+                    <th>Compound Thinking</th>
+                     <td>{{mix}}%</td>
+                  </tr>
+                </table>
+        </div>
+        <div class="graphsec">
+            <img src={{url}} />
+        </div>
+    </div>
+</body>
+</html>
