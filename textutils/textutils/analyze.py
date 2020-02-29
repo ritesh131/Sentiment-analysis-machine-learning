@@ -36,8 +36,8 @@ def sentiment(request):
         x = plt.bar(inputdata, objects, align='edge', width=0.2, alpha=0.7, color=['red', 'yellow', 'green', 'blue', ])
         x = plt.xticks(inputdata, objects)
         plt.xticks(rotation='45')
-        x = plt.ylabel('Usage')
-        x = plt.title('Programming language usage')
+        y = plt.ylabel('')
+        x = plt.title('')
         plt.savefig('bar.png', dpi=200, bbox_inches='tight')
 
 
